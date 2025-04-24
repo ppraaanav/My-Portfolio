@@ -19,27 +19,27 @@ export function EducationSection() {
     {
       degree: "Bachelor of Technology",
       institution: "Lovely Professional University",
-      location: "Punjab, India",
-      startDate: "August 2020",
+      location: "Jalandhar, Punjab",
+      startDate: "August 2022",
       endDate: "Present",
-      grade: "CGPA: 8.34",
+      grade: "CGPA: 6.34",
       icon: "🎓"
     },
     {
       degree: "Intermediate",
       institution: "BBHS, Shiksha Niketan",
-      location: "Jhansi, India",
-      startDate: "April 2017",
-      endDate: "March 2019",
+      location: "Jhansi, Uttar Pradesh",
+      startDate: "April 2021",
+      endDate: "March 2022",
       grade: "Percentage: 77.4%",
       icon: "🏫"
     },
     {
       degree: "Matriculation",
       institution: "Christ The King College",
-      location: "Jhansi, India",
-      startDate: "April 2015",
-      endDate: "March 2017",
+      location: "Jhansi, Uttar Pradesh",
+      startDate: "April 2019",
+      endDate: "March 2020",
       grade: "Percentage: 77.7%",
       icon: "🏫"
     }

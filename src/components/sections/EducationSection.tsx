@@ -27,7 +27,7 @@ export function EducationSection() {
     },
     {
       degree: "Intermediate",
-      institution: "BBHS, Shiksha Niketan",
+      institution: "BHEL, Shiksha Niketan",
       location: "Jhansi, Uttar Pradesh",
       startDate: "April 2021",
       endDate: "March 2022",

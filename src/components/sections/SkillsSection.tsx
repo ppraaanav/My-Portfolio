@@ -1,11 +1,18 @@
 
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { useEffect, useState } from "react";
+import { 
+  Code, 
+  FileCode, 
+  CircuitBoard, 
+  Database, 
+  Cloud, 
+  Users 
+} from "lucide-react";
 
 interface Skill {
   name: string;
-  percentage: number;
-  icon: string;
+  icon: React.ReactNode;
   category: "Languages" | "Frameworks" | "Tools/Platforms" | "Soft Skills";
 }
 
@@ -21,30 +28,30 @@ export function SkillsSection() {
 
   const skills: Skill[] = [
     // Languages
-    { name: "Java", percentage: 90, icon: "☕", category: "Languages" },
-    { name: "C++", percentage: 85, icon: "🔠", category: "Languages" },
-    { name: "Python", percentage: 80, icon: "🐍", category: "Languages" },
-    { name: "C", percentage: 85, icon: "©️", category: "Languages" },
-    { name: "SQL", percentage: 75, icon: "🗃️", category: "Languages" },
-    { name: "PHP", percentage: 65, icon: "🐘", category: "Languages" },
+    { name: "Java", icon: <Code />, category: "Languages" },
+    { name: "C++", icon: <FileCode />, category: "Languages" },
+    { name: "Python", icon: <CircuitBoard />, category: "Languages" },
+    { name: "C", icon: <Code />, category: "Languages" },
+    { name: "SQL", icon: <Database />, category: "Languages" },
+    { name: "PHP", icon: <FileCode />, category: "Languages" },
     
     // Frameworks
-    { name: "HTML", percentage: 95, icon: "🌐", category: "Frameworks" },
-    { name: "CSS", percentage: 85, icon: "🎨", category: "Frameworks" },
-    { name: "JavaScript", percentage: 80, icon: "📜", category: "Frameworks" },
-    { name: "React", percentage: 75, icon: "⚛️", category: "Frameworks" },
+    { name: "HTML", icon: <FileCode />, category: "Frameworks" },
+    { name: "CSS", icon: <FileCode />, category: "Frameworks" },
+    { name: "JavaScript", icon: <Code />, category: "Frameworks" },
+    { name: "React", icon: <CircuitBoard />, category: "Frameworks" },
     
     // Tools/Platforms
-    { name: "MySQL", percentage: 80, icon: "🛢️", category: "Tools/Platforms" },
-    { name: "MongoDB", percentage: 75, icon: "🍃", category: "Tools/Platforms" },
-    { name: "Google Cloud", percentage: 70, icon: "☁️", category: "Tools/Platforms" },
+    { name: "MySQL", icon: <Database />, category: "Tools/Platforms" },
+    { name: "MongoDB", icon: <Database />, category: "Tools/Platforms" },
+    { name: "Google Cloud", icon: <Cloud />, category: "Tools/Platforms" },
     
     // Soft Skills
-    { name: "Teamwork", percentage: 95, icon: "👥", category: "Soft Skills" },
-    { name: "Time Management", percentage: 90, icon: "⏱️", category: "Soft Skills" },
-    { name: "Flexible", percentage: 85, icon: "🧘", category: "Soft Skills" },
-    { name: "Adaptive", percentage: 90, icon: "🔄", category: "Soft Skills" },
-    { name: "Punctual", percentage: 95, icon: "⏰", category: "Soft Skills" },
+    { name: "Teamwork", icon: <Users />, category: "Soft Skills" },
+    { name: "Time Management", icon: <Code />, category: "Soft Skills" },
+    { name: "Flexible", icon: <CircuitBoard />, category: "Soft Skills" },
+    { name: "Adaptive", icon: <FileCode />, category: "Soft Skills" },
+    { name: "Punctual", icon: <Code />, category: "Soft Skills" },
   ];
 
   const categories = ["Languages", "Frameworks", "Tools/Platforms", "Soft Skills"];
@@ -75,22 +82,8 @@ export function SkillsSection() {
                       >
                         <div className="bg-card shadow-md rounded-lg p-5 hover:shadow-lg transition-shadow">
                           <div className="flex items-center gap-3 mb-3">
-                            <span className="text-2xl">{skill.icon}</span>
+                            <span className="text-2xl text-primary">{skill.icon}</span>
                             <h4 className="text-lg font-medium">{skill.name}</h4>
-                          </div>
-                          
-                          <div className="skill-bar">
-                            <div 
-                              className="skill-progress"
-                              style={{ 
-                                width: animateSkills ? `${skill.percentage}%` : '0%',
-                                transitionDelay: `${index * 100 + 300}ms`
-                              }}
-                            ></div>
-                          </div>
-                          
-                          <div className="text-right mt-1 text-sm text-foreground/70">
-                            {skill.percentage}%
                           </div>
                         </div>
                       </div>

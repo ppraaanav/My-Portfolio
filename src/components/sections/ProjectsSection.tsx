@@ -20,7 +20,7 @@ export function ProjectsSection() {
     {
       title: "4-Play",
       description: "Built an interactive platform where users can watch both recorded videos and live streams. Designed a colorful and immersive interface, integrated real-time streaming, and improved performance for a seamless viewing experience.",
-      imageUrl: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=1074&auto=format&fit=crop",
+      imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
       date: "May 2022",
       techUsed: ["JavaScript", "Node.js", "HTML", "CSS", "WebRTC", "Express.js", "MongoDB/MySQL"],
       link: "https://github.com/pranavsr/4Play",

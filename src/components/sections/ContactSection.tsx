@@ -51,26 +51,26 @@ export function ContactSection() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "pranavgupta279@gmail.com",
-      href: "mailto:pranavgupta279@gmail.com",
+      value: "pranavgupta7754@gmail.com",
+      href: "mailto:pranavgupta7754@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+91-6191979979",
-      href: "tel:+916191979979",
+      value: "+91-6393419179",
+      href: "tel:+916393419179",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/pranav-gupta/",
-      href: "https://www.linkedin.com/in/pranav-gupta/",
+      value: "linkedin.com/in/pranav--gupta//",
+      href: "www.linkedin.com/in/pranav--gupta/",
     },
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      value: "github.com/pranavsr",
-      href: "https://github.com/pranavsr",
+      value: "github.com/ppraaanav",
+      href: "github.com/ppraaanav",
     },
   ];
 

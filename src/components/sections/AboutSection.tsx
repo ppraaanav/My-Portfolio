@@ -60,11 +60,11 @@ export function AboutSection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>LinkedIn:</strong> linkedin.com/in/pranav--gupta/</span>
+                  <span><strong>LinkedIn:</strong>pranav--gupta</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>GitHub:</strong> https://github.com/ppraaanav</span>
+                  <span><strong>GitHub:</strong>ppraaanav</span>
                 </div>
               </div>
             </div>

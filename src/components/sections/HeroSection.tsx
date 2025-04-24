@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="flex flex-col items-center text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-              Pranav Kumar <span className="text-accent">Gupta</span>
+              Pranav Kumar Gupta <span className="text-accent">Gupta</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-8">
               Computer Science Engineer & Software Developer

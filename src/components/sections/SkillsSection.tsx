@@ -7,7 +7,13 @@ import {
   CircuitBoard, 
   Database, 
   Cloud, 
-  Users 
+  Users,
+  Globe,
+  Cpu,
+  Server,
+  BrainCircuit,
+  Timer,
+  Puzzle
 } from "lucide-react";
 
 interface Skill {
@@ -28,30 +34,30 @@ export function SkillsSection() {
 
   const skills: Skill[] = [
     // Languages
-    { name: "Java", icon: <Code />, category: "Languages" },
-    { name: "C++", icon: <FileCode />, category: "Languages" },
-    { name: "Python", icon: <CircuitBoard />, category: "Languages" },
-    { name: "C", icon: <Code />, category: "Languages" },
-    { name: "SQL", icon: <Database />, category: "Languages" },
-    { name: "PHP", icon: <FileCode />, category: "Languages" },
+    { name: "Java", icon: <Code className="text-blue-500" />, category: "Languages" },
+    { name: "C++", icon: <FileCode className="text-purple-500" />, category: "Languages" },
+    { name: "Python", icon: <CircuitBoard className="text-yellow-500" />, category: "Languages" },
+    { name: "C", icon: <Cpu className="text-red-500" />, category: "Languages" },
+    { name: "SQL", icon: <Database className="text-green-500" />, category: "Languages" },
+    { name: "PHP", icon: <FileCode className="text-indigo-500" />, category: "Languages" },
     
     // Frameworks
-    { name: "HTML", icon: <FileCode />, category: "Frameworks" },
-    { name: "CSS", icon: <FileCode />, category: "Frameworks" },
-    { name: "JavaScript", icon: <Code />, category: "Frameworks" },
-    { name: "React", icon: <CircuitBoard />, category: "Frameworks" },
+    { name: "HTML", icon: <Globe className="text-orange-500" />, category: "Frameworks" },
+    { name: "CSS", icon: <FileCode className="text-blue-400" />, category: "Frameworks" },
+    { name: "JavaScript", icon: <Code className="text-yellow-400" />, category: "Frameworks" },
+    { name: "React", icon: <CircuitBoard className="text-cyan-400" />, category: "Frameworks" },
     
     // Tools/Platforms
-    { name: "MySQL", icon: <Database />, category: "Tools/Platforms" },
-    { name: "MongoDB", icon: <Database />, category: "Tools/Platforms" },
-    { name: "Google Cloud", icon: <Cloud />, category: "Tools/Platforms" },
+    { name: "MySQL", icon: <Database className="text-blue-600" />, category: "Tools/Platforms" },
+    { name: "MongoDB", icon: <Database className="text-green-600" />, category: "Tools/Platforms" },
+    { name: "Google Cloud", icon: <Cloud className="text-blue-400" />, category: "Tools/Platforms" },
     
     // Soft Skills
-    { name: "Teamwork", icon: <Users />, category: "Soft Skills" },
-    { name: "Time Management", icon: <Code />, category: "Soft Skills" },
-    { name: "Flexible", icon: <CircuitBoard />, category: "Soft Skills" },
-    { name: "Adaptive", icon: <FileCode />, category: "Soft Skills" },
-    { name: "Punctual", icon: <Code />, category: "Soft Skills" },
+    { name: "Teamwork", icon: <Users className="text-purple-400" />, category: "Soft Skills" },
+    { name: "Time Management", icon: <Timer className="text-amber-500" />, category: "Soft Skills" },
+    { name: "Flexible", icon: <BrainCircuit className="text-green-400" />, category: "Soft Skills" },
+    { name: "Adaptive", icon: <Puzzle className="text-blue-400" />, category: "Soft Skills" },
+    { name: "Punctual", icon: <Server className="text-rose-400" />, category: "Soft Skills" },
   ];
 
   const categories = ["Languages", "Frameworks", "Tools/Platforms", "Soft Skills"];
@@ -59,10 +65,15 @@ export function SkillsSection() {
   return (
     <section 
       id="skills" 
-      className="bg-background"
+      className="bg-gradient-to-br from-background via-background/95 to-background/90 relative overflow-hidden"
       ref={ref as React.RefObject<HTMLDivElement>}
     >
-      <div className="container mx-auto px-4">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]">
+        <div className="absolute inset-0 bg-repeat bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxMmE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDM2IDEyem0tMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDI0IDEyem0tMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDEyIDEyem0wIDEyYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMTIgMjR6bTEyIDBhNS40OSA1LjQ5IDAgMCAwLS4zNCAxLjk0YzAgMy4wMiAyLjQ1IDUuNDcgNS40NyA1LjQ3czUuNDctMi40NSA1LjQ3LTUuNDdjMC0uNjYtLjEyLTEuMy0uMzQtMS45NEwyNCAyNHptMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDM2IDI0em0wIDEyYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMzYgMzZ6bS0xMiAwYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMjQgMzZ6bS0xMiAwYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMTIgMzZ6Ii8+PC9nPjwvc3ZnPg==')]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative">
         <div className={`transition-all duration-700 ${hasIntersected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h2 className="section-title text-center mb-16">Skills & Expertise</h2>
           
@@ -80,9 +91,9 @@ export function SkillsSection() {
                         className={`transition-all duration-700 delay-${index * 100} ${animateSkills ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                         style={{ transitionDelay: `${index * 100}ms` }}
                       >
-                        <div className="bg-card shadow-md rounded-lg p-5 hover:shadow-lg transition-shadow">
+                        <div className="bg-card shadow-md rounded-lg p-5 hover:shadow-lg transition-shadow border border-border/5 hover:border-accent/20">
                           <div className="flex items-center gap-3 mb-3">
-                            <span className="text-2xl text-primary">{skill.icon}</span>
+                            <span className="text-2xl p-2 rounded-lg bg-accent/10">{skill.icon}</span>
                             <h4 className="text-lg font-medium">{skill.name}</h4>
                           </div>
                         </div>

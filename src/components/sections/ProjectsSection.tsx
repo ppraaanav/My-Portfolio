@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -27,20 +26,20 @@ export function ProjectsSection() {
       link: "https://github.com/pranavsr/4Play",
     },
     {
-      title: "Food Fiesta",
-      description: "Food Fiesta is a user-friendly application that lets customers order their favorite food online and get it delivered to their location. It features a clean and intuitive interface, integrated real-time order tracking, and streamlined the experience for quick and easy food ordering.",
-      imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=1080&auto=format&fit=crop",
-      date: "April 2022",
-      techUsed: ["JavaScript", "React.js", "HTML", "CSS", "Node.js"],
-      link: "#",
-    },
-    {
       title: "University Management System",
       description: "Collaborated on a group project to develop a platform providing essential information about the university and its departments. Created an intuitive interface and implemented a structured content management system.",
       imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1470&auto=format&fit=crop",
       date: "April 2022",
       techUsed: ["HTML", "CSS", "JavaScript"],
       link: "https://pranavsr.github.io/UMS/",
+    },
+    {
+      title: "Food Fiesta",
+      description: "Food Fiesta is a user-friendly application that lets customers order their favorite food online and get it delivered to their location. It features a clean and intuitive interface, integrated real-time order tracking, and streamlined the experience for quick and easy food ordering.",
+      imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=1080&auto=format&fit=crop",
+      date: "April 2022",
+      techUsed: ["JavaScript", "React.js", "HTML", "CSS", "Node.js"],
+      link: "#",
     },
     {
       title: "Fitness Club",

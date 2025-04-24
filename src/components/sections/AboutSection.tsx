@@ -20,7 +20,7 @@ export function AboutSection() {
                 <div className="w-64 h-64 md:w-80 md:h-80 bg-accent/20 rounded-full overflow-hidden border-4 border-accent/40 shadow-xl">
                   <img 
                     src="/lovable-uploads/45c54c34-93a7-43c3-b2de-2aba4ca60e3e.png" 
-                    alt="Pranav Kumar Gupta" 
+                    alt="Pranav  Gupta" 
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
@@ -33,7 +33,7 @@ export function AboutSection() {
               <h3 className="text-2xl font-bold text-primary">Computer Science Engineer & Software Developer</h3>
               
               <p className="text-foreground/80">
-                I'm Pranav Kumar Gupta, a Computer Science Engineer with a strong foundation in programming and software development. 
+                I'm Pranav Gupta, a Computer Science Engineer with a strong foundation in programming and software development. 
                 I specialize in developing efficient algorithms and creating responsive applications using various programming languages 
                 and frameworks.
               </p>
@@ -52,19 +52,19 @@ export function AboutSection() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>Email:</strong> pranavgupta279@gmail.com</span>
+                  <span><strong>Email:</strong> pranavgupta7754@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>Mobile:</strong> +91-6191979979</span>
+                  <span><strong>Mobile:</strong> +91-6393419179</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>LinkedIn:</strong> linkedin.com/in/pranav-gupta/</span>
+                  <span><strong>LinkedIn:</strong> linkedin.com/in/pranav--gupta/</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <span><strong>GitHub:</strong> github.com/pranavsr</span>
+                  <span><strong>GitHub:</strong> https://github.com/ppraaanav</span>
                 </div>
               </div>
             </div>

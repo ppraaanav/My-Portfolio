@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
     
     --card: 0 0% 100%;
@@ -107,11 +108,15 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl mb-6 md:mb-10 font-bold relative inline-block text-primary;
+    @apply text-3xl md:text-4xl mb-6 md:mb-10 font-bold relative inline-block;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .section-title::after {
     @apply content-[''] absolute w-3/5 h-1 bg-accent rounded left-0 -bottom-2;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
   }
   
   .glassmorphism {
@@ -123,7 +128,8 @@
   }
   
   .skill-progress {
-    @apply h-full bg-accent rounded-full transition-all duration-1000;
+    @apply h-full rounded-full transition-all duration-1000;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
   }
 }
 
@@ -168,4 +174,57 @@
 
 ::-webkit-scrollbar-thumb {
   @apply bg-accent/50 rounded-full hover:bg-accent;
+}
+
+/* Text gradient effects */
+.text-gradient-primary {
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+}
+
+.text-gradient-light {
+  @apply bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent dark:from-white dark:to-white/80;
+}
+
+/* Shimmer effect for cards */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Improved button styles */
+button.gradient-btn {
+  @apply relative overflow-hidden transition-all duration-300;
+  background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)));
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

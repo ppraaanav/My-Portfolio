@@ -8,12 +8,12 @@ import {
   Database, 
   Cloud, 
   Users,
+  Timer,
+  BrainCircuit,
+  Puzzle,
   Globe,
   Cpu,
-  Server,
-  BrainCircuit,
-  Timer,
-  Puzzle
+  Server
 } from "lucide-react";
 
 interface Skill {
@@ -57,7 +57,6 @@ export function SkillsSection() {
     { name: "Time Management", icon: <Timer className="text-amber-500" />, category: "Soft Skills" },
     { name: "Flexible", icon: <BrainCircuit className="text-green-400" />, category: "Soft Skills" },
     { name: "Adaptive", icon: <Puzzle className="text-blue-400" />, category: "Soft Skills" },
-    { name: "Punctual", icon: <Server className="text-rose-400" />, category: "Soft Skills" },
   ];
 
   const categories = ["Languages", "Frameworks", "Tools/Platforms", "Soft Skills"];
@@ -68,7 +67,6 @@ export function SkillsSection() {
       className="bg-gradient-to-br from-background via-background/95 to-background/90 relative overflow-hidden"
       ref={ref as React.RefObject<HTMLDivElement>}
     >
-      {/* Background pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]">
         <div className="absolute inset-0 bg-repeat bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxMmE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDM2IDEyem0tMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDI0IDEyem0tMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDEyIDEyem0wIDEyYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMTIgMjR6bTEyIDBhNS40OSA1LjQ5IDAgMCAwLS4zNCAxLjk0YzAgMy4wMiAyLjQ1IDUuNDcgNS40NyA1LjQ3czUuNDctMi40NSA1LjQ3LTUuNDdjMC0uNjYtLjEyLTEuMy0uMzQtMS45NEwyNCAyNHptMTIgMGE1LjQ5IDUuNDkgMCAwIDAtLjM0IDEuOTRjMCAzLjAyIDIuNDUgNS40NyA1LjQ3IDUuNDdzNS40Ny0yLjQ1IDUuNDctNS40N2MwLS42Ni0uMTItMS4zLS4zNC0xLjk0TDM2IDI0em0wIDEyYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMzYgMzZ6bS0xMiAwYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMjQgMzZ6bS0xMiAwYTUuNDkgNS40OSAwIDAgMC0uMzQgMS45NGMwIDMuMDIgMi40NSA1LjQ3IDUuNDcgNS40N3M1LjQ3LTIuNDUgNS40Ny01LjQ3YzAtLjY2LS4xMi0xLjMtLjM0LTEuOTRMMTIgMzZ6Ii8+PC9nPjwvc3ZnPg==')]"></div>
       </div>
@@ -91,10 +89,10 @@ export function SkillsSection() {
                         className={`transition-all duration-700 delay-${index * 100} ${animateSkills ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                         style={{ transitionDelay: `${index * 100}ms` }}
                       >
-                        <div className="bg-card shadow-md rounded-lg p-5 hover:shadow-lg transition-shadow border border-border/5 hover:border-accent/20">
-                          <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-card/80 backdrop-blur-sm shadow-lg rounded-lg p-5 hover:shadow-xl transition-all duration-300 hover:scale-105 border border-accent/10 hover:border-accent/20">
+                          <div className="flex items-center gap-3">
                             <span className="text-2xl p-2 rounded-lg bg-accent/10">{skill.icon}</span>
-                            <h4 className="text-lg font-medium">{skill.name}</h4>
+                            <h4 className="text-lg font-medium bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">{skill.name}</h4>
                           </div>
                         </div>
                       </div>

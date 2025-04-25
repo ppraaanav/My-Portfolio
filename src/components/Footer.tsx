@@ -14,11 +14,7 @@ export function Footer() {
             </p>
           </div>
           
-          <div className="flex items-center">
-            <p className="text-foreground/70 flex items-center gap-1">
-              Made with <Heart className="h-4 w-4 text-red-500 animate-pulse-slow" /> using React & Tailwind
-            </p>
-          </div>
+          
         </div>
       </div>
     </footer>

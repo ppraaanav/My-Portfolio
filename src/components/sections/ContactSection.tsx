@@ -63,13 +63,13 @@ export function ContactSection() {
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      value: "pranav--gupta",
+      value: "linkedin.com/in/pranav--gupta//",
       href: "www.linkedin.com/in/pranav--gupta/",
     },
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      value: "ppraaanav",
+      value: "github.com/ppraaanav",
       href: "github.com/ppraaanav",
     },
   ];

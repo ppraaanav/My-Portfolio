@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -7,15 +8,15 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-code-pattern bg-cover bg-center bg-no-repeat pt-20"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/85"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/85 backdrop-blur-sm"></div>
       
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col items-center text-center">
           <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-              Pranav <span className="text-accent">Gupta</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white">
+              Pranav <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Gupta</span>
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto mb-8 font-light">
               Computer Science Engineer & Software Developer
             </p>
           </div>

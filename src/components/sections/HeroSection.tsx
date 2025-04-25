@@ -7,7 +7,7 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-code-pattern bg-cover bg-center bg-no-repeat pt-20"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70 dark:from-background/95 dark:via-background/90 dark:to-background/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/90 to-background/85"></div>
       
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col items-center text-center">

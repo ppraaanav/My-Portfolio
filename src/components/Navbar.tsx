@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -28,7 +27,6 @@ export function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
     { name: "Certifications", href: "#certifications" },
-    { name: "Achievements", href: "#achievements" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -42,7 +40,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#home" className="text-xl md:text-2xl font-bold text-primary dark:text-primary">
-          <span className="text-accent">P</span>ranav Kumar
+          <span className="text-accent">P</span>ranav Gupta
         </a>
 
         {/* Desktop Menu */}

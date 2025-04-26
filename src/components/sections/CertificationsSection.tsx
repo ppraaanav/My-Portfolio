@@ -21,7 +21,7 @@ export function CertificationsSection() {
       title: "Data Structures and Algorithms",
       issuer: "GeeksforGeeks",
       date: "March 2023",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1470&auto=format&fit=crop",
+      image: "https://github.com/ppraaanav/lumina-web-artist/blob/main/public/DSAgfg.pdf",
       link: "#"
     },
     {
@@ -35,14 +35,14 @@ export function CertificationsSection() {
       title: "Full Stack Web Development",
       issuer: "LinkedInLearning",
       date: "February 2023",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop",
+      image: "public/MOOCsFullStack.pdf",
       link: "#"
     },
     {
       title: "Python",
       issuer: "Udemy",
       date: "July 2022",
-      image: "https://images.unsplash.com/photo-1526379879527-8559ecfcb970?q=80&w=1374&auto=format&fit=crop",
+      image: "public/PythonUdemy.pdf",
       link: "#"
     },
     {

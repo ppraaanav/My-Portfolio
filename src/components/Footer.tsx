@@ -16,13 +16,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-foreground/70 font-medium">
-              © {currentYear} Pranav Kumar Gupta. All rights reserved.
+              © {currentYear} Pranav Gupta. All rights reserved.
             </p>
           </div>
           <div className="flex items-center text-foreground/70">
             <span className="mr-1">Made with</span>
-            <Heart className="h-4 w-4 mx-1 text-red-500 animate-pulse" />
-            <span className="ml-1">by <span className="text-accent font-medium">Pranav Kumar Gupta</span></span>
+            
+            <span className="ml-1">by <span className="text-accent font-medium">Pranav Gupta</span></span>
           </div>
         </div>
       </div>

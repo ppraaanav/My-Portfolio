@@ -13,8 +13,11 @@ export function Footer() {
               © {currentYear} Pranav Kumar Gupta. All rights reserved.
             </p>
           </div>
-          
-          
+          <div className="flex items-center text-foreground/70">
+            <span>Made with</span>
+            <Heart className="h-4 w-4 mx-1 text-red-500" />
+            <span>by Pranav Kumar Gupta</span>
+          </div>
         </div>
       </div>
     </footer>

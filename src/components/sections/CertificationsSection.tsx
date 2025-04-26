@@ -21,7 +21,7 @@ export function CertificationsSection() {
       title: "Data Structures and Algorithms",
       issuer: "GeeksforGeeks",
       date: "March 2023",
-      image: "https://github.com/ppraaanav/lumina-web-artist/blob/main/public/DSAgfg.pdf",
+      
       link: "#"
     },
     {

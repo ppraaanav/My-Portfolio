@@ -83,12 +83,12 @@ export default {
 					to: { height: "0" },
 				},
 				"fade-in": {
-					"0%": { opacity: "0", transform: "translateY(10px)" },
+					"0%": { opacity: "0", transform: "translateY(20px)" },
 					"100%": { opacity: "1", transform: "translateY(0)" }
 				},
 				"fade-out": {
 					"0%": { opacity: "1", transform: "translateY(0)" },
-					"100%": { opacity: "0", transform: "translateY(10px)" }
+					"100%": { opacity: "0", transform: "translateY(20px)" }
 				},
 				"scale-in": {
 					"0%": { transform: "scale(0.95)", opacity: "0" },
@@ -105,22 +105,50 @@ export default {
 				"pulse-slow": {
 					"0%, 100%": { opacity: "1" },
 					"50%": { opacity: "0.7" }
+				},
+				"spin-slow": {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(360deg)" }
+				},
+				"bounce-subtle": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-5px)" }
+				},
+				"glow": {
+					"0%, 100%": { boxShadow: "0 0 5px 2px var(--glow-color, rgba(79, 70, 229, 0.3))" },
+					"50%": { boxShadow: "0 0 20px 5px var(--glow-color, rgba(79, 70, 229, 0.6))" }
 				}
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
-				"fade-in": "fade-in 0.5s ease-out forwards",
+				"fade-in": "fade-in 0.7s ease-out forwards",
 				"fade-out": "fade-out 0.5s ease-out forwards",
-				"scale-in": "scale-in 0.3s ease-out",
+				"scale-in": "scale-in 0.5s ease-out",
 				"slide-in": "slide-in 0.5s ease-out",
-				"float": "float 3s ease-in-out infinite",
+				"float": "float 4s ease-in-out infinite",
 				"pulse-slow": "pulse-slow 3s ease-in-out infinite",
+				"spin-slow": "spin-slow 8s linear infinite",
+				"bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
+				"glow": "glow 2s ease-in-out infinite"
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'hero-pattern': "url('/lovable-uploads/45c54c34-93a7-43c3-b2de-2aba4ca60e3e.png')",
 				'code-pattern': "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop')",
+				'dots-pattern': "radial-gradient(circle, var(--dots-color, rgba(79, 70, 229, 0.1)) 1px, transparent 1px)",
+				'mesh-gradient': "linear-gradient(45deg, var(--mesh-start, rgba(79, 70, 229, 0.1)) 0%, var(--mesh-end, rgba(147, 51, 234, 0.1)) 100%)",
+			},
+			boxShadow: {
+				'neon': '0 0 5px theme(colors.accent.DEFAULT), 0 0 20px theme(colors.accent.DEFAULT)',
+				'3d': '5px 5px 0px theme(colors.accent.DEFAULT)',
+				'inner-glow': 'inset 0 0 10px rgba(79, 70, 229, 0.3)'
+			},
+			textShadow: {
+				'glow': '0 0 10px rgba(79, 70, 229, 0.5)',
+			},
+			backdropBlur: {
+				'xs': '2px',
 			}
 		}
 	},

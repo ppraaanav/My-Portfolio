@@ -22,7 +22,7 @@ export function EducationSection() {
       location: "Punjab, India",
       startDate: "August 2020",
       endDate: "Present",
-      grade: "CGPA: 8.34",
+      grade: "CGPA: 6.34",
       icon: "🎓"
     },
     {

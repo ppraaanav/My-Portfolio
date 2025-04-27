@@ -8,8 +8,7 @@ interface Certification {
   title: string;
   issuer: string;
   date: string;
-  image: string;
-  link?: string;
+  link: string;
 }
 
 export function CertificationsSection() {
@@ -21,43 +20,37 @@ export function CertificationsSection() {
       title: "Data Structures and Algorithms",
       issuer: "GeeksforGeeks",
       date: "March 2023",
-      
-      link: "#"
+      link: "https://drive.google.com/file/d/your-dsa-certificate-link/view"
     },
     {
       title: "Data Analysis and Algorithm",
       issuer: "Coursera",
       date: "July 2023",
-      image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop",
-      link: "#"
+      link: "https://coursera.org/your-data-analysis-certificate"
     },
     {
       title: "Full Stack Web Development",
       issuer: "LinkedInLearning",
       date: "February 2023",
-      image: "public/MOOCsFullStack.pdf",
-      link: "#"
+      link: "https://www.linkedin.com/learning/certificates/your-full-stack-cert"
     },
     {
       title: "Python",
       issuer: "Udemy",
       date: "July 2022",
-      image: "public/PythonUdemy.pdf",
-      link: "#"
+      link: "https://www.udemy.com/certificate/your-python-cert"
     },
     {
       title: "C Badge",
       issuer: "HackerRank",
       date: "April 2022",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1469&auto=format&fit=crop",
-      link: "#"
+      link: "https://www.hackerrank.com/certificates/your-c-badge"
     },
     {
       title: "Python Badge",
       issuer: "HackerRank",
       date: "July 2022",
-      image: "https://images.unsplash.com/photo-1526379879527-8559ecfcb970?q=80&w=1374&auto=format&fit=crop",
-      link: "#"
+      link: "https://www.hackerrank.com/certificates/your-python-badge"
     }
   ];
 
@@ -79,17 +72,6 @@ export function CertificationsSection() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="bg-card rounded-xl overflow-hidden shadow-md h-full card-hover">
-                  <div 
-                    className="h-48 overflow-hidden cursor-pointer" 
-                    onClick={() => setSelectedImage(cert.image)}
-                  >
-                    <img 
-                      src={cert.image} 
-                      alt={cert.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                    />
-                  </div>
-                  
                   <div className="p-5">
                     <div className="flex items-start justify-between mb-2">
                       <h3 className="text-lg font-bold flex items-center gap-2">
@@ -103,19 +85,17 @@ export function CertificationsSection() {
                       <span className="text-xs text-foreground/60 bg-secondary px-2 py-1 rounded">{cert.date}</span>
                     </div>
                     
-                    {cert.link && (
-                      <div className="mt-4 flex justify-end">
-                        <a 
-                          href={cert.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-accent hover:text-accent/80 text-sm flex items-center gap-1"
-                        >
-                          View Certificate
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </div>
-                    )}
+                    <div className="mt-4 flex justify-end">
+                      <a 
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent hover:text-accent/80 text-sm flex items-center gap-1"
+                      >
+                        View Certificate
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -123,27 +103,6 @@ export function CertificationsSection() {
           </div>
         </div>
       </div>
-
-      {/* Certificate Image Modal */}
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-3xl max-h-[90vh] p-0 overflow-hidden">
-          {selectedImage && (
-            <div className="relative">
-              <img 
-                src={selectedImage} 
-                alt="Certificate"
-                className="w-full h-auto"
-              />
-              <button 
-                onClick={() => setSelectedImage(null)}
-                className="absolute top-2 right-2 bg-background/80 rounded-full p-1"
-              >
-                <ExternalLink className="w-5 h-5" />
-              </button>
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
     </section>
   );
 }

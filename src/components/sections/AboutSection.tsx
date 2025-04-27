@@ -19,7 +19,7 @@ export function AboutSection() {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 bg-accent/20 rounded-full overflow-hidden border-4 border-accent/40 shadow-xl">
                   <img 
-                    src="/lovable-uploads/45c54c34-93a7-43c3-b2de-2aba4ca60e3e.png" 
+                    src="/lovable-uploads/ChatGPT Image Apr 27, 2025, 04 02 19 PM.png" 
                     alt="Pranav  Gupta" 
                     className="w-full h-full object-cover object-center"
                   />

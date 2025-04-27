@@ -20,13 +20,13 @@ export function CertificationsSection() {
       title: "Data Structures and Algorithms",
       issuer: "GeeksforGeeks",
       date: "March 2023",
-      link: "https://drive.google.com/file/d/your-dsa-certificate-link/view"
+      link: "https://drive.google.com/file/d/10KYMZPlQHuJW_z4A6EKoGWBJMrEYI_SU/view?usp=drive_link"
     },
     {
-      title: "Data Analysis and Algorithm",
+      title: "Generative AI",
       issuer: "Coursera",
       date: "July 2023",
-      link: "https://coursera.org/your-data-analysis-certificate"
+      link: "https://www.coursera.org/account/accomplishments/verify/FAK8MPCLW68L?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
     },
     {
       title: "Full Stack Web Development",
@@ -38,7 +38,7 @@ export function CertificationsSection() {
       title: "Python",
       issuer: "Udemy",
       date: "July 2022",
-      link: "https://www.udemy.com/certificate/your-python-cert"
+      link: "https://drive.google.com/file/d/1dqS7Ul7Qr5Ed9XvXxl8Si1S-WPehnpi7/view?usp=sharing"
     },
     {
       title: "C Badge",

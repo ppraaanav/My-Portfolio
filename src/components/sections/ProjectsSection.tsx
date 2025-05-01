@@ -31,7 +31,7 @@ export function ProjectsSection() {
       featured: true
     },
     {
-      title: "4-Play",
+      title: "Fun Play",
       description: "Built an interactive platform where users can watch both recorded videos and live streams. Designed a colorful and immersive interface, integrated real-time streaming, and improved performance for a seamless viewing experience.",
       imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
       date: "May 2022",

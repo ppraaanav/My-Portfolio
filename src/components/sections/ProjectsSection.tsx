@@ -22,6 +22,15 @@ export function ProjectsSection() {
   
   const projects: Project[] = [
     {
+      title: "E-Commerce",
+      description: "Designed a responsive interface using React.js and integrated secure backend APIs. Engineered robust data validation protocols, reducing security vulnerabilities by identifying critical issues within the first month. Implemented user authentication, payment gateway services, and performance optimizations for an enhanced user experience.",
+      imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1470&auto=format&fit=crop",
+      date: "Jan-Apr 2024",
+      techUsed: ["MongoDB", "Express JS", "React JS", "Node JS", "Postman"],
+      link: "#",
+      featured: true
+    },
+    {
       title: "4-Play",
       description: "Built an interactive platform where users can watch both recorded videos and live streams. Designed a colorful and immersive interface, integrated real-time streaming, and improved performance for a seamless viewing experience.",
       imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
